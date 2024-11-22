@@ -441,6 +441,7 @@ p, .fs-label-md {
     --c-bg-primary: var(--c-gray-50);
     --c-surface-primary: var(--c-white-600);
     --c-surface-secondary: var(--c-white-100);
+    --c-surface-alt-primary: var(--c-gray-950);
     --c-fill-primary: var(--c-violet-700);
     --c-fill-secondary: color-mix(in oklch, var(--c-fill-primary), black 10%);
     --c-border-primary: var(--c-gray-200);
@@ -463,6 +464,7 @@ html.dark {
     --c-bg-primary: var(--c-black-900);
     --c-surface-primary: var(--c-black-100);
     --c-surface-secondary: rgba(17, 24, 39, 0.3);
+    --c-surface-alt-primary: var(--c-gray-200);
     --c-fill-primary: var(--c-violet-800);
     --c-fill-secondary: color-mix(in oklch, var(--c-fill-primary), black 10%);
     --c-border-primary: var(--c-gray-900);

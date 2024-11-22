@@ -1,8 +1,8 @@
 ---
 import { Picture } from 'astro:assets';
-import laptop from '../assets/flash-photo-01.png';
+import laptop from '../assets/pop-laptop-mockup.png';
 
-const heroTitle = `pop motion tester `;
+const heroTitle = `build. together. `;
 const heroDesc = `transfered all assets to new folder to test netlify hosting!`;
 ---
 
@@ -25,7 +25,7 @@ const heroDesc = `transfered all assets to new folder to test netlify hosting!`;
     </div>
     <div class="hero-image-wrap">
         <div class="image">
-            <Picture src={laptop} alt="Laptop" widths={[400, 800, 1200]} sizes="100vw" />
+            <Picture src={laptop} alt="Laptop" widths={[400, 800, 1200, 1920, 2560]} sizes="100vw" />
         </div>
     </div>
 </div>
@@ -71,6 +71,7 @@ const heroDesc = `transfered all assets to new folder to test netlify hosting!`;
         overflow: hidden;
         border: var(--c-border-primary) 1px solid;
         border-radius: var(--b-radius-lg);
+        background-color: var(--c-surface-alt-primary);
     }
 
     .image {
