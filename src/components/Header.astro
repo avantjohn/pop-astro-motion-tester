@@ -11,11 +11,14 @@ const navItems = [
 ---
 
 <script>
-    import { gsap } from 'gsap';
-    import { ScrollTrigger } from 'gsap/ScrollTrigger';
-    gsap.registerPlugin(ScrollTrigger);
+    // import { gsap } from 'gsap';
+    // import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    // gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from('.nav-wrap', { y: '-100%', duration: 0.75, delay: 0, ease: 'power1.out' });
+    // gsap.from('.nav-wrap', { y: '-100%', duration: 0.75, delay: 0, ease: 'power1.out' });
+
+    import { animate, scroll } from 'motion';
+    animate('.nav-wrap', { y: ['-100%', 0] }, { duration: 0.75 });
 
     // Add mobile menu toggle functionality
     const menuBtn = document.querySelector('.mobile-menu-btn');

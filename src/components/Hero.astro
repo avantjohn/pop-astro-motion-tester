@@ -3,15 +3,21 @@ import { Picture } from 'astro:assets';
 import laptop from '../assets/pop-laptop-mockup.png';
 
 const heroTitle = `build. together. `;
-const heroDesc = `transfered all assets to new folder to test netlify hosting!`;
+const heroDesc = `a curation of resources for crafting digital interfaces and interactions.`;
 ---
 
 <script>
+    /*
     import { gsap } from 'gsap';
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.from('.fade', { opacity: 0, duration: 1, delay: 0, ease: 'power1.out' });
+    
+    */
+
+    import { animate, scroll } from 'motion';
+    animate('.fade', { opacity: [0, 1] }, { duration: 2 });
 </script>
 
 <div class="hero fade">
