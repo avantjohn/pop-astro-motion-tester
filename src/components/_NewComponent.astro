@@ -1,0 +1,33 @@
+---
+const placeholder = `World`;
+---
+
+<script>
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.fade', { opacity: 0, duration: 1, delay: 0, ease: 'power1.out' });
+</script>
+
+<div class="wrap fade">
+    <h1>Hello {placeholder}</h1>
+</div>
+
+<style>
+    .wrap {
+        max-width: 100%;
+        padding: var(--s-global-padding);
+    }
+    /* TABLET - Responsive Styles */
+    @media (max-width: 768px) {
+        .div {
+        }
+    }
+
+    /* MOBILE - Responsive Styles */
+    @media (max-width: 425px) {
+        .div {
+        }
+    }
+</style>
