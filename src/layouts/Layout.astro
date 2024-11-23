@@ -1,5 +1,17 @@
 ---
-import '../../src/styles/globals.css';
+/* Import CSS Utilities */
+import '../../src/styles/utilities/css-reset.css';
+import '../../src/styles/utilities/smooth-scroll.css';
+
+/* Import Global Theme Styles */
+import '../../src/styles/theme/spacing-theme.css';
+import '../../src/styles/theme/borders-theme.css';
+import '../../src/styles/theme/colors-global.css';
+import '../../src/styles/theme/colors-theme.css';
+import '../../src/styles/theme/fonts-theme.css';
+import '../../src/styles/custom.css';
+
+/* Import Fonts */
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/800.css';
@@ -7,6 +19,7 @@ import interFont400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?u
 import interFont500 from '@fontsource/inter/files/inter-latin-500-normal.woff2?url';
 import interFont800 from '@fontsource/inter/files/inter-latin-800-normal.woff2?url';
 
+/* Import Site Wide Components */
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
